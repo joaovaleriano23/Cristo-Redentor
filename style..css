@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+.fotos-body {
+    background: #f4e8d2;
+}
+
+.containe-nav {
+    width: 100%;
+    display: flex;
+    padding: 5px 0 0px;
+    background-color: rgb(125, 70, 30);
+    position: fixed;
+    z-index: 1;
+
+    a {
+        color: #ede7e6;
+        font-size: 18px;
+        font-weight: 500;
+        transition: .7s;
+        text-decoration: none;
+    }
+}
+
+.div-logo {
+    width: 280px;
+    height: 50px;
+    display: flex;
+
+    p {
+        color: #fdfcf9;
+        text-align: center;
+    }
+}
+
+.img-cristo {
+    margin-left: 20px;
+    width: 85px;
+}
+
+.nav-list {
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    top: 10px;
+    right: 0;
+    gap: 30px;
+    position: fixed;
+}
+
+nav ul a .seta {
+    color: #32100b;
+    font-size: 10px;
+    display: inline -block;
+}
+
+.dropdown-multimidia,
+.dropdown-visite {
+    position: absolute;
+    box-shadow: 0 0 15px white;
+    top: 100%;
+    background-color: rgba(171, 99, 63, 0.783);
+    display: none;
+    line-height: 35px;
+    text-align: center;
+}
+
+nav li a:hover {
+    color: #080808;
+    background-color: white;
+    padding: 5px 2px;
+    border-radius: 5px;
+    transition: .7s;
+}
+
+.dropdown-m:hover .dropdown-multimidia {
+    display: block;
+    width: 125px;
+}
+
+.dropdown-f:hover .dropdown-visite {
+    display: block;
+    width: 250px;
+}
+
+.rede-sociais {
+    width: 25px;
+}
+
+nav .menu-icon img {
+    width: 35px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+nav .close-icon img {
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Inicio da Págian HOME*/
+main {
+    padding-top: 100px;
+}
+
+.fotos-section {
+    padding-top: 65px;
+}
+
+main .caixa-1 {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    /* background-color: chocolate; */
+    padding: 10px;
+}
+
+main .caixa-1 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+main .caixa-2 {
+    width: 40%;
+    height: 600px;
+    background-color: #edc27270;
+    text-align: center;
+}
+
+main .caixa-3 {
+    width: 60%;
+    height: 600px;
+    background-color: #e0d9d8ab;
+    text-align: right;
+    display: flex;
+}
+
+.img-cristo-r {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* display: none; */
+}
+ .cristo-redentor {
+    width: 100%;
+    height: 100%;
+}
+
+main .caixa-3 .texto {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    padding: 15px;
+
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    p {
+        color: #7c4203;
+        font-size: 1rem;
+    }
+    .botao {
+        width: 100%;
+        /* background-color: #0b0b0b; */
+        align-items: center;
+    }
+    .button-infor {
+        width: 280px;
+        border: none;
+        color: rgb(14, 28, 219);
+        background-color: rgb(163, 159, 159);
+        border-radius: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 4px;
+    
+    }
+
+    .button-infor:hover {
+        background-color: #f0bf4d;
+        color: #080808;
+        font-weight: 600;
+        transition: .7s;
+    }
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 500px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        height: 450px;
+    }
+
+    .fotos-caroucel {
+        width: 130px;
+        height: 270px;
+        cursor: pointer;
+        margin: 60px 0;
+    }
+
+    .fotos-caroucel:hover {
+
+        box-shadow: 0 0 25px rgb(12, 12, 12);
+        transform: scaleY(1.5) scaleX(1.9);
+        transition: .7s;
+    }
+    
+}
+
+.active {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+main .quem-somos {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    gap: 20px;
+
+    margin-top: 30px;
+    background-color: burlywood;
+
+    h2 {
+        background-color: chocolate;
+        padding: 10px;
+        color: white;
+    }
+
+    p {
+        padding: 0 10px;
+    }
+}
+
+main .midias {
+    width: 80%;
+    margin: 0 auto;
+    background-color: burlywood;
+    margin-top: 30px;
+
+    h2 {
+        background-color: chocolate;
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    p {
+        padding: 10px;
+        background-color: rgba(245, 245, 220, 0.315);
+    }
+
+    h3 {
+        width: 150px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px;
+        color: rgb(249, 248, 248);
+        background-color: rgba(220, 19, 59, 0.99);
+        border-radius: 25px;
+        margin-bottom: 5px;
+    }
+}
+
+.midia-caixa {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.galeria-fotos img {
+    width: 280px;
+    height: 450px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    align-items: center;
+
+}
+
+.galeria-video {
+    width: 280px;
+    height: 450px;
+    padding-right: 20px;
+    margin-top: 15px;
+}
+
+article,
+.fotos-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+article h2 {
+    font-size: 30px;
+    font-weight: 500;
+    background-color: chocolate;
+    padding: 10px;
+    color: white;
+    margin: 30px 0 0;
+}
+
+.fotos-section h1 {
+    font-size: 30px;
+    font-weight: 500;
+    background-color: chocolate;
+    padding: 10px;
+    color: white;
+    margin: 0
+}
+
+article .pastorais {
+    width: 100%;
+    height: 100%;
+    background-color: burlywood;
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+/* Termino da Página HOME*/
+
+/* Páaginas de Fotos - FOTOS-HTML*/
+section .fotos-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: burlywood;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section .pastoral-fotos {
+    width: 200px;
+    height: 300px;
+    background-color: #f1af68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pastoral-item h3 {
+    color: #f7f2f2;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+article .pastoral-item {
+    width: 288px;
+    height: 350px;
+    background-color: #e2960a70;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+article .pastoral-item p {
+    width: 240px;
+    color: #0d0c03;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+article .pastoral-img {
+    width: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 7rem
+}
+
+section .pastoral-fotos img {
+    width: 185px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px white;
+}
+
+article .terco {
+    margin-top: 5.5rem
+}
+
+article figcaption {
+    text-align: center;
+    color: #0b0b0b;
+    font-weight: 600;
+}
+
+.pastoral-item:hover {
+    background-color: #f7c96d;
+    box-shadow: 0 0 25px rgb(10, 10, 10);
+    transition: 1.1s;
+    h3 {
+        color: #0b0b0b;
+    }
+
+    p {
+        color: #332c2d;
+    }
+}
+/* seção HTML Foto*/
+.fotos-section-2 {
+    width: 80%;
+    margin: 60px auto;
+    background-color: burlywood;
+}
+
+.fotos-section-2 h1 {
+    font-size: 30px;
+    font-weight: 500;
+    background-color: chocolate;
+    padding: 10px;
+    color: white;
+}
+
+.fotos-container-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;   
+}
+
+.fotos-do-album h3{
+    color: #090202;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;    
+}
+
+.fotos-do-album {
+    display: flex;  
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #eea359;
+
+    figure {
+        width: 150px;
+        height: 165px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        background-color: #eea359;        
+    }
+    
+    img {
+        width: 100px;
+        height: 130px;  
+    }
+
+    img:hover {
+        transform: scale(2.4);
+        transition: 0.7s;
+        box-shadow: 0 0 15px white;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 395px;
+    background-color: #241802;
+    padding: 20px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    figure {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        img {
+            width: 180px;
+            height: 100px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px white;
+        }
+    }
+
+    a {
+        justify-items: center;
+    }
+}
+
+footer .footer-social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 35px;
+
+    img {
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+    }
+}
+
+footer .rodape {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    color: white;
+}
+
+footer, .footer {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    z-index: 1;
+
+    img {
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+        margin: 5px 20px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .border-social {
+        border-radius: 50%;
+        border-bottom: 2px solid #dee2e6;
+    }
+}
+
+footer .footer-registro {
+    width: 100%;
+    color: rgb(10, 194, 56);
+    text-align: center;
+    line-height: 9px;
+    margin-top: 20px;
+}
+
+/* Responsividade*/
+@media (max-width: 700px) {
+
+    .nav-list {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #7c4203;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+        z-index: 1;
+    }
+
+    .open {
+        clip-path: circle(141.2% at 100% 0);
+    }
+
+    nav .menu-icon img { 
+        display: block;
+        right: 25px;
+    }
+
+    nav .close-icon img {
+        display: block;
+        top: 25px;
+        right: 30px;
+    }
+
+    main .caixa-2 {
+        display: none;
+    }
+
+    main .caixa-3 {
+        width: 100%;
+        height: 100%;
+        background-color: #e0d9d8ab;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .midia-caixa {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        gap: 20px;
+    }
+
+    .galeria-fotos img {
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+    }
+
+    .videos video {
+        width: 100%;
+        height: 100%;
+        padding-right: 0px;
+        margin-top: 15px;
+    }
+
+    article .pastoral-item {
+        width: 230px;
+        height: 350px;
+    }
+
+    article .pastoral-item p {
+        width: 180px;
+        color: #0d0c03;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    article .pastoral-img {
+        width: 45px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 4rem
+    }
+
+    footer {
+        width: 100%;
+        height: 320px;
+        /* padding: 20px; */
+    }
+
+    footer .footer-logo {
+        display: none;
+    }
+    
+    footer {
+        padding: 20px 25px;
+    }
+    footer .rodape {
+        gap: 10px;
+        ;
+    }
+
+    footer .footer-social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 35px;
+    text-align: left;
+
+    p {
+        
+        margin: 0;
+    }
+    }   
+
+    footer .footer-registro {
+    width: 100%;
+    color: rgb(10, 194, 56);
+    text-align: center;
+    margin-bottom: 20px;
+}
+}
