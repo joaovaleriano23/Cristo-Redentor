@@ -743,14 +743,19 @@ footer .footer-registro {
     }
     .footer-social p{
         font-size: 14px;
-        line-height: 28px;
+        line-height: 26px;
     }
 
     .footer-social img{
         margin: 0 5px;
     }
 
-    .footer-registro {
+    footer .footer-registro {
+    
+    line-height: 9px;
+    margin-top: 20px;
+    }
+.footer-registro {
         margin-top: 10px;
     }
 
