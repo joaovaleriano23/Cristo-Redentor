@@ -27,10 +27,11 @@
 
             <nav class="menu-nav">
 
-                <div class="div-logo"> <img src="./asset/simbolo/Icons-cristo-redentor.png" alt="Cristo Redentor"
-                        class="img-cristo">
 
-                    <p> Cristo Redentor do GUAJARÁ</p>
+                <div class="div-logo">
+                    <img src="./asset/simbolo/Icons-cristo-redentor.png" alt="Cristo Redentor" class="img-cristo">
+
+                    <p>Área Pastoral Cristo Redentor do GUAJARÁ</p>
                 </div>
 
                 <ul class="nav-list">
@@ -38,10 +39,12 @@
                     <li><a href="./quem-somos.html">Quem Somos</a></li>
                     <li class="dropdown-m"><a href="#">Multimídia <span class="seta">▼</span></a>
                         <ul class="dropdown-multimidia">
-                            <li><a href="#">Fotos</a></li>
-                            <li><a href="#">Vídeos</a></li>
+                            <li><a href="./fotos.html">Fotos</a></li>
+                            <li><a href="./videos.html">Vídeos</a></li>
                         </ul>
                     </li>
+                    <li><a href="./fotos.html">Fotos</a></li>
+                    <li><a href="./videos.html">Vídeos</a></li>
 
                     <li class="dropdown-f"><a href="#">Faça Parte <span class="seta">▼</span></a>
                         <ul class="dropdown-liste">
@@ -61,7 +64,18 @@
 
                     <li><a href="#"><img src="./asset/facebook.png" alt="facebook" class="rede-sociais"></a></li>
 
+                    <li>
+                        <div class="close-icon">
+                            <img src="./asset/close-icon.png" alt="Feichar" onclick="closeMenu()">
+                        </div>
+                    </li>
                 </ul>
+
+                <div class="menu-icon">
+                    <img src="./asset/menu-icon.png" alt="Menu" onclick="openMenu()">
+
+                </div>
+
             </nav>
         </div>
     </header>
@@ -81,26 +95,26 @@
 
                                 <img class="fotos-caroucel" src="./asset/cristo-redentor.webp"
                                     alt="Imagem do Cristo Redentor">
-                                <img class="fotos-caroucel active-2" src="./asset/Catequista.png" alt="Oculos">
-                                <img class="fotos-caroucel" src="./asset/consagraçãoda-ostra.webp" alt="Oculos">
-                                <img class="fotos-caroucel" src="./asset/Forró Chegando.png" alt="Oculos">
-                                <img class="fotos-caroucel" src="./asset/Sacramento.png" alt="Oculos">
-                                <img class="fotos-caroucel" src="./asset/Sacramento.png" alt="Oculos">
+                                <img class="fotos-caroucel active-2" src="./asset/Catequista.png" alt="Aviso da Catequese">
+                                <img class="fotos-caroucel" src="./asset/consagraçãoda-ostra.webp" alt="foto da ostra">
+                                <img class="fotos-caroucel" src="./asset/Forró Chegando.png" alt="Aviso do Forró">
+                                <img class="fotos-caroucel" src="./asset/Sacramento.png" alt="Foto do Sacramento">
+                                <img class="fotos-caroucel" src="./asset/Sacramento.png" alt="foto do Sacramento">
                                 <img class="fotos-caroucel" src="./asset/cristo-redentor.webp" alt="...">
-                                <img class="fotos-caroucel" src="./asset/Catequista.png" alt="Oculos">
+                                <img class="fotos-caroucel" src="./asset/Catequista.png" alt="...">
 
                             </div>
 
                             <div class="carousel-item">
 
-                                <img class="fotos-caroucel" src="./asset/consagraçãoda-ostra.webp" alt="Oculos">
-                                <img class="fotos-caroucel" src="./asset/Forró Chegando.png" alt="Oculos">
-                                <img class="fotos-caroucel" src="./asset/Sacramento.png" alt="Oculos">
+                                <img class="fotos-caroucel" src="./asset/consagraçãoda-ostra.webp" alt="...">
+                                <img class="fotos-caroucel" src="./asset/Forró Chegando.png" alt="...">
+                                <img class="fotos-caroucel" src="./asset/Sacramento.png" alt="...">
                                 <img class="fotos-caroucel" src="./asset/cristo-redentor.webp" alt="...">
-                                <img class="fotos-caroucel" src="./asset/Catequista.png" alt="Oculos">
-                                <img class="fotos-caroucel" src="./asset/consagraçãoda-ostra.webp" alt="Oculos">
-                                <img class="fotos-caroucel" src="./asset/Forró Chegando.png" alt="Oculos">
-                                <img class="fotos-caroucel" src="./asset/Sacramento.png" alt="Oculos">
+                                <img class="fotos-caroucel" src="./asset/Catequista.png" alt="...">
+                                <img class="fotos-caroucel" src="./asset/consagraçãoda-ostra.webp" alt="...">
+                                <img class="fotos-caroucel" src="./asset/Forró Chegando.png" alt="...s">
+                                <img class="fotos-caroucel" src="./asset/Sacramento.png" alt="...">
                             </div>
 
                         </div>
@@ -265,5 +279,6 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
+<script src="./script.js"></script>
 
 </html>
