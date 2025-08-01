@@ -72,6 +72,9 @@ nav ul a .seta {
     line-height: 35px;
     text-align: center;
 }
+ul .foto1, .video1,.pastorias1 {
+    display:none;
+}
 
 nav li a:hover {
     color: #080808;
@@ -302,6 +305,11 @@ main .midias {
         padding: 10px;
         background-color: rgba(245, 245, 220, 0.315);
     }
+}
+
+main .quemsomos{
+    height: 100vh;
+    margin-bottom: 50px;
 }
 
 .midia-caixa {
@@ -702,6 +710,10 @@ main .container-carousel {
         right: 30px;
     }
 
+    ul .foto1, .video1, .pastorias1 {
+    display:block;
+    }
+
     main .caixa-2 {
         display: none;
     }
@@ -740,8 +752,6 @@ main .container-carousel {
     display: flex;
     flex-direction: column;
     }
-
-
     .videos video {
         width: 100%;
         height: 100%;
@@ -818,9 +828,8 @@ main .container-carousel {
     .footer-social .email-p{
         
         margin-top: 10px;
-        
-        
     }
+
     .footer-social, .footer {
         margin-top: 30px;
     }
